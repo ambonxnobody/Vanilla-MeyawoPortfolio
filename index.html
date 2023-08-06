@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="This is portfolio of an artist and soon to be a frontend web designer who's name is Keneisha Ludmilla Sanjaya">
+    <meta name="author" content="https://github.com/ambonxnobody">
+    <script>
+        // On Page Load, Alert Visitor
+        window.onload = function () {
+            alert("Hello Sensei 😊");
+        }
+
+        let name = "Keneisha Ludmilla Sanjaya";
+
+        // On Click, Alert Visitor
+        function myFunction() {
+            let input = prompt("What is your name?");
+            if (input != null && input != "") {
+                name = input;
+            } else {
+                name = "Keneisha Ludmilla Sanjaya";
+            }
+
+            // refresh span with new name
+            document.getElementById("name").innerHTML = name;
+        }
+
+        function notFunctional(e) {
+            alert("Sorry this button is not functional");
+        }
+
+        function emailMe() {
+            window.location.href = "mailto:keneisha.sanjaya@gmail.com";
+        }
+
+        function randomNumberAboveHundred() {
+            let random = Math.floor(Math.random() * 1000) + 100;
+            return random;
+        }
+    </script>
+    <title>Keneisha Ludmilla Sanjaya | 22229541</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="assets/css/meyawo.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">Keneisha's</a>
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#hobbies">Hobbies</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#photos">Photos</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#artwork">Artwork</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#testmonial">Testmonial</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a>
+                </li>
+                <li class="item ml-md-3">
+                    <a href="components.html" class="btn btn-primary">Components</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">HI!</span>
+                <span id="name" class="down">I am <script>document.write(name)</script></span>
+            </h1>
+            <p class="header-subtitle">FRONTEND WEB DESIGNER</p>
+
+            <button onclick="myFunction()" class="btn btn-primary">Click This To Put Your Name on This Website</button>
+        </div>
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="assets/images/3.jpeg" class="about-img"
+                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="about-caption">
+                    <p class="section-subtitle">Who Am I ?</p>
+                    <h2 class="section-title mb-3">About Me</h2>
+                    <p>Hello everyone! My name is Keneisha Ludmilla Sanjaya! I am a first year student, majoring in Digital Business and Innovation. I was born in the capital city of Indonesia, Jakarta.</p>
+                    <p>I decided to take this course because I am very interested in knowing the basics of coding and informatics!!</p>
+                    <p>Thank you for reading my website! Please email me for any inquiries ❤️</p>
+                    <button onclick="emailMe()" class="btn-rounded btn btn-outline-primary mt-4">Email Me</button>
+                </div>
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+
+    <!-- hobbies section -->
+    <section class="section" id="hobbies">
+        <div class="container text-center">
+            <p class="section-subtitle">What I Do ?</p>
+            <h6 class="section-title mb-6">Hobbies</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/imgs/pencil-case.svg"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Painting</h6>
+                            <p class="subtitle">Ever since I was a child, I have always enjoyed painting. It's one of my favorite thing to do to pass time. My favorite painting medium is gouache!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/images/ballet.svg"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Ballet</h6>
+                            <p class="subtitle">Ballet is one of my favorite form of dance! Even though I don't do ballet anymore, I still enjoy watching ballet shows such as The Nutcracker!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/images/travel.svg"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Traveling</h6>
+                            <p class="subtitle">I absolutely adore traveling to new places and experiencing new culture. Some of my favorite places that I've visited is Saudi Arabia and Poland! My dream country to visit is Greece and Italy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="assets/images/handShake.svg"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                                class="icon">
+                            <h6 class="title">Meeting new people</h6>
+                            <p class="subtitle">I haven't always like meeting new people. I was extremely shy growing up, but now, I love getting to know new people and backgrounds.</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end of row -->
+        </div>
+    </section><!-- end of hobbies section -->
+
+    <!-- photos section -->
+    <section class="section" id="photos">
+        <div class="container text-center">
+            <p class="section-subtitle">More Photos of Me ?</p>
+            <h6 class="section-title mb-6">Photos</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="javascript:void(0)" style="cursor: pointer;" class="portfolio-card">
+                        <img src="assets/images/1.jpeg" class="portfolio-card-img"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Japan</h5>
+                                    <p class="font-weight-normal">This is a picture of me and my friends on our first New Years Eve holiday in Japan!</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="javascript:void(0)" style="cursor: pointer;" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/images/2.jpeg" class="img-responsive rounded"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Tokyo, Japan</h5>
+                                    <p class="font-weight-normal">This is a picture of me and my friends while visiting the aquarium in Tokyo Skytree!</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="javascript:void(0)" style="cursor: pointer;" class="portfolio-card">
+                        <img class="portfolio-card-img" src="assets/images/3.jpeg" class="img-responsive rounded"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4>Bali, Indonesia</h5>
+                                    <p class="font-weight-normal">This is a picture of me while on a holiday to a famous tourist spot in my home country, Bali!</p>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div><!-- end of row -->
+        </div><!-- end of container -->
+    </section> <!-- end of photos section -->
+
+    <!-- artwork section -->
+    <section class="section" id="artwork">
+        <!-- container -->
+        <div class="container text-center">
+            <p class="section-subtitle">Recent Artworks?</p>
+            <h6 class="section-title mb-6">Artwork</h6>
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/arts/art1.jpeg" class="blog-card-img"
+                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Painting 1</h6>
+
+                        <p class="blog-card-caption">
+                            <a onclick="notFunctional()" style="cursor: pointer;">By: Keneisha Ludmilla Sanjaya</a>
+                            <a onclick="notFunctional()" style="cursor: pointer;"><i class="ti-heart text-danger"></i> <script>document.write(randomNumberAboveHundred())</script></a>
+                            <a onclick="notFunctional()" style="cursor: pointer;"><i class="ti-comment"></i> <script>document.write(randomNumberAboveHundred())</script></a>
+                        </p>
+                        <p>This is a painting I did on watercolor paper using gouache! It's a painting of a forest with sunlight peeking through the bushes. I really like how this painting turned out.</p>
+
+                </div>
+            </div><!-- end of blog wrapper -->
+
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/arts/art2.jpeg" class="blog-card-img"
+                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Painting 2</h6>
+
+                        <p class="blog-card-caption">
+                            <a onclick="notFunctional()" style="cursor: pointer;">By: Keneisha Ludmilla Sanjaya</a>
+                            <a onclick="notFunctional()" style="cursor: pointer;"><i class="ti-heart text-danger"></i> <script>document.write(randomNumberAboveHundred())</script></a>
+                            <a onclick="notFunctional()" style="cursor: pointer;"><i class="ti-comment"></i> <script>document.write(randomNumberAboveHundred())</script></a>
+                        </p>
+
+                        <p>This is a painting I did on watercolor paper using gouache! It's a painting of a river. I also really like how the reflection of the trees in the water looks.</p>
+
+                </div>
+            </div><!-- end of blog wrapper -->
+
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/arts/art3.jpeg" class="blog-card-img"
+                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Painting 3</h6>
+
+                        <p class="blog-card-caption">
+                            <a onclick="notFunctional()" style="cursor: pointer;">By: Keneisha Ludmilla Sanjaya</a>
+                            <a onclick="notFunctional()" style="cursor: pointer;"><i class="ti-heart text-danger"></i> <script>document.write(randomNumberAboveHundred())</script></a>
+                            <a onclick="notFunctional()" style="cursor: pointer;"><i class="ti-comment"></i> <script>document.write(randomNumberAboveHundred())</script></a>
+                        </p>
+
+                        <p>This is a painting I did on watercolor paper using gouache! This was the first time I ever used gouache so it's a little messy. Overall I think this painting helped me understand and navigate my way through color theory and gouache paints.</p>
+
+                </div>
+            </div><!-- end of blog wrapper -->
+
+            <!-- blog-wrapper -->
+            <div class="blog-card">
+                <div class="blog-card-header">
+                    <img src="assets/arts/art6.jpeg" class="blog-card-img"
+                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Painting 4</h6>
+
+                        <p class="blog-card-caption">
+                            <a onclick="notFunctional()" style="cursor: pointer;">By: Keneisha Ludmilla Sanjaya</a>
+                            <a onclick="notFunctional()" style="cursor: pointer;"><i class="ti-heart text-danger"></i> <script>document.write(randomNumberAboveHundred())</script></a>
+                            <a onclick="notFunctional()" style="cursor: pointer;"><i class="ti-comment"></i> <script>document.write(randomNumberAboveHundred())</script></a>
+                        </p>
+
+                        <p>This is one of my favorite painting! It's another painting that I did on watercolor paper using gouache! It's a painting of a field and I love how the mountains in the background turned out.  </p>
+
+                </div>
+            </div><!-- end of blog wrapper -->
+
+            <!-- blog-wrapper -->
+            <div class="blog-card-2">
+                <div class="blog-card-header">
+                    <img src="assets/arts/art4.jpeg" class="blog-card-img"
+                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Painting 5</h6>
+
+                        <p class="blog-card-caption">
+                            <a onclick="notFunctional()" style="cursor: pointer;">By: Keneisha Ludmilla Sanjaya</a>
+                            <a onclick="notFunctional()" style="cursor: pointer;"><i class="ti-heart text-danger"></i> <script>document.write(randomNumberAboveHundred())</script></a>
+                            <a onclick="notFunctional()" style="cursor: pointer;"><i class="ti-comment"></i> <script>document.write(randomNumberAboveHundred())</script></a>
+                        </p>
+
+                        <p>Other than painting landscapes, I also love painting scenes from Studio Ghibli. Here, I painted a scene from the movie "Howl's Moving Castle". It was my first time painting people so I was very nervous. Even though it's not perfect, I still like it.</p>
+
+                </div>
+            </div><!-- end of blog wrapper -->
+
+            <!-- blog-wrapper -->
+            <div class="blog-card-2">
+                <div class="blog-card-header">
+                    <img src="assets/arts/art5.jpeg" class="blog-card-img"
+                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Painting 6</h6>
+
+                        <p class="blog-card-caption">
+                            <a onclick="notFunctional()" style="cursor: pointer;">By: Keneisha Ludmilla Sanjaya</a>
+                            <a onclick="notFunctional()" style="cursor: pointer;"><i class="ti-heart text-danger"></i> <script>document.write(randomNumberAboveHundred())</script></a>
+                            <a onclick="notFunctional()" style="cursor: pointer;"><i class="ti-comment"></i> <script>document.write(randomNumberAboveHundred())</script></a>
+                        </p>
+
+                        <p>This is my absolute favorite painting that I've ever done. It's a painting of a bridge and the water beneath it. This is one of the last piece that I did before moving to Japan.</p>
+
+                </div>
+            </div><!-- end of blog wrapper -->
+
+            <!-- blog-wrapper -->
+            <div class="blog-card-2">
+                <div class="blog-card-header">
+                    <img src="assets/arts/art7.jpeg" class="blog-card-img"
+                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="blog-card-body">
+                    <h5 class="blog-card-title">Painting 7</h6>
+
+                        <p class="blog-card-caption">
+                            <a onclick="notFunctional()" style="cursor: pointer;">By: Keneisha Ludmilla Sanjaya</a>
+                            <a onclick="notFunctional()" style="cursor: pointer;"><i class="ti-heart text-danger"></i> <script>document.write(randomNumberAboveHundred())</script></a>
+                            <a onclick="notFunctional()" style="cursor: pointer;"><i class="ti-comment"></i> <script>document.write(randomNumberAboveHundred())</script></a>
+                        </p>
+
+                        <p>This is another scene that I painted from Studio Ghibli. It is a close up of Howl. I really like how this turned out. Even though it looks simple, I had a hard time mixing the color of his skin. I had a lot of fun experimenting with different types of reds, whites, blues, and yellows to make different skin colors.</p>
+
+                </div>
+            </div><!-- end of blog wrapper -->
+
+        </div><!-- end of container -->
+    </section><!-- end of artwork section -->
+
+    <!-- pricing section -->
+    <!-- <section class="section" id="pricing">
+        <div class="container text-center">
+            <p class="section-subtitle">How Much I Charge ?</p>
+            <h6 class="section-title mb-6">My Pricing</h6>
+            <div class="pricing-wrapper">
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <img class="pricing-card-icon" src="assets/imgs/scooter.svg"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">Free</h6>
+                        <div class="pricing-card-list">
+                            <p>accusamus reprehenderit</p>
+                            <p>provident dolorem </p>
+                            <p>quos neque</p>
+                            <p>fugiat quibusdam</p>
+                            <p><i class="ti-close"></i></p>
+                            <p><i class="ti-close"></i></p>
+                        </div>
+                    </div>
+                    <div class="pricing-card-footer">
+                        <span>$</span>
+                        <span>0.00/Month</span>
+                    </div>
+                    <a onclick="notFunctional()" style="cursor: pointer;" class="text-white btn btn-primary mt-3 pricing-card-btn">Subscribe</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <img class="pricing-card-icon" src="assets/imgs/shipped.svg"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">Basic</h6>
+                        <div class="pricing-card-list">
+                            <p>accusamus reprehenderit</p>
+                            <p>provident dolorem </p>
+                            <p>quos neque</p>
+                            <p>fugiat quibusdam</p>
+                            <p>accusamus laboriosam</p>
+                            <p><i class="ti-close"></i></p>
+                        </div>
+                    </div>
+                    <div class="pricing-card-footer">
+                        <span>$</span>
+                        <span>9.99/Month</span>
+                    </div>
+                    <a onclick="notFunctional()" style="cursor: pointer;" class="text-white btn btn-primary mt-3 pricing-card-btn">Subscribe</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-card-header">
+                        <img class="pricing-card-icon" src="assets/imgs/startup.svg"
+                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                    </div>
+                    <div class="pricing-card-body">
+                        <h6 class="pricing-card-title">Premium</h6>
+                        <div class="pricing-card-list">
+                            <p>accusamus reprehenderit</p>
+                            <p>provident dolorem </p>
+                            <p>quos neque</p>
+                            <p>fugiat quibusdam</p>
+                            <p>accusamus laboriosam</p>
+                            <p>inventore omnis</p>
+                        </div>
+                    </div>
+                    <div class="pricing-card-footer">
+                        <span>$</span>
+                        <span>99.9/Month</span>
+                    </div>
+                    <a onclick="notFunctional()" style="cursor: pointer;" class="text-white btn btn-primary mt-3 pricing-card-btn">Subscribe</a>
+                </div>
+
+            </div>
+        </div>
+    </section> -->
+    <!-- end of pricing section -->
+
+    <!-- section -->
+    <section class="section-sm bg-primary">
+        <!-- container -->
+        <div class="container text-center text-sm-left">
+            <!-- row -->
+            <div class="row align-items-center">
+                <div class="col-sm offset-md-1 mb-4 mb-md-0">
+                    <h6 class="title text-light">Want to work with me?</h6>
+                    <p class="m-0 text-light">Always feel Free to Contact & Hire me</p>
+                </div>
+                <div class="col-sm offset-sm-2 offset-md-3">
+                    <button onclick="notFunctional()" class="btn btn-lg my-font btn-light rounded">Hire Me</button>
+                </div>
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </section> <!-- end of section -->
+
+    <!-- testimonial section -->
+    <!-- <section class="section" id="testmonial">
+        <div class="container text-center">
+            <p class="section-subtitle">What Think Client About Me ?</p>
+            <h6 class="section-title mb-6">Testmonial</h6>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card-img-holder">
+                            <img src="assets/imgs/avatar2.jpg" class="testimonial-card-img"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        </div>
+                        <div class="testimonial-card-body">
+                            <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis
+                                adipisci nihil.</p>
+                            <h6 class="testimonial-card-title">Emily Reb</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-card-img-holder">
+                            <img src="assets/imgs/avatar3.jpg" class="testimonial-card-img"
+                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        </div>
+                        <div class="testimonial-card-body">
+                            <p class="testimonial-card-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Eaque doloribus autem aperiam earum nostrum omnis blanditiis corporis perspiciatis
+                                adipisci nihil.</p>
+                            <h6 class="testimonial-card-title">Emily Reb</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  -->
+    <!-- end of testimonial section -->
+
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle">How can you communicate?</p>
+            <h6 class="section-title mb-5">Contact Me</h6>
+            <!-- contact form -->
+            <form action="mailto:keneisha.sanjaya@gmail.com" method="get" enctype="text/plain" id="contactMe" class="contact-form col-md-10 col-lg-8 m-auto">
+                <div class="form-row">
+                    <div class="form-group col-sm-6">
+                        <input id="yourName" name="subject" type="text" size="50" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group col-sm-6">
+                        <input id="yourEmail" name="email" type="email" class="form-control" placeholder="Enter Email" requried>
+                    </div>
+                    <div class="form-group col-sm-12">
+                        <textarea name="body" id="comment" rows="6" class="form-control"
+                            placeholder="Write Something"></textarea>
+                    </div>
+                    <div class="form-group col-sm-12 mt-3">
+                        <input onclick="contactMeForm()" type="submit" value="Send Message" class="btn btn-outline-primary rounded">
+                    </div>
+                </div>
+            </form><!-- end of contact form -->
+        </div><!-- end of container -->
+    </section><!-- end of contact section -->
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">
+            <p class="mb-0">Copyright
+                <script>document.write(new Date().getFullYear())</script> &copy; Keneisha Ludmilla Sanjaya | 22229541
+            </p>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="assets/js/meyawo.js"></script>
+
+</body>
+
+</html>
